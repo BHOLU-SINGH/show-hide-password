@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, tomato, red);
+}
+
+.container .form-control {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+
+.container .form-control input#myPass {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border: none;
+    outline: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.container .form-control p {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.container .form-control p input {
+    width: 15px;
+    height: 15px;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+.container .form-control p span {
+    font-size: 1.1rem;
+    letter-spacing: 0.3px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Show & Hide Password | FreeProjects1</title>
+  <meta name="keywords" content="show and hide password, password security, HTML, CSS, JavaScript, step-by-step tutorial, quick guide, beginner tutorial, web development, front-end development, user interface, user experience">
+  <meta name="description" content="Learn how to create a show and hide password functionality using HTML, CSS, and JavaScript in this step-by-step tutorial. This is a great way to improve the security of your website or web app.">
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="form-control">
+      <input type="password" id="myPass" placeholder="Password">
+      <p onclick="togglePassword()"><input type="checkbox" id="myCheckbox"> <span>Show Password</span></p>
+    </div>
+  </div>
+
+
+  <script>
+    let password = document.getElementById("myPass");
+    let checkbox = document.getElementById("myCheckbox");
+    let span = document.querySelector("span");
+
+    function togglePassword() {
+      if (password.type === "password") {
+        password.type = "text";
+        checkbox.checked = "true";
+        span.innerHTML = "Hide Password";
+      } else {
+        password.type = "password";
+        checkbox.checked = "";
+        span.innerHTML = "Show Password";
+      }
+    }
+  </script>
+</body>
+
+</html>
